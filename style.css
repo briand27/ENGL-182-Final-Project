@@ -3,6 +3,7 @@ $purple:#6E6C9B;
 *{
   padding: 0px;
   margin: 0px;
+  background-color: black;
 }
 
 body{
@@ -15,29 +16,130 @@ body{
   margin: 0px;
 }
 
+p{
+  padding: 0px;
+  margin: 0px;
+}
+
 span{
   color:#fff;
   display:block;
 }
 
 .slides{
-
+  background-color: inherit;
 }
 
 .slide_1{
-  background-color: maroon;
+  background-color: black;
   height: 100vh;
   width: 100vw;
+
+  color: gold;
+
+  background-image: url(http://img.gawkerassets.com/img/18petjfu1p3hsjpg/ku-xlarge.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .slide_2{
   background-color: lightblue;
   height: 100vh;
   width: 100vw;
+
+  color: red;
+
+  background-image: url(http://i2.cdn.cnn.com/cnnnext/dam/assets/150428131440-01-star-wars-myth-1977-line---restricted-super-169.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .slide_3{
   background-color: maroon;
+  height: 100vh;
+  width: 100vw;
+
+  color: lightblue;
+
+  /* Not Sure if I like this one */
+  background-image: url(https://static1.squarespace.com/static/56272186e4b0a79b5123f467/t/56d58fe086db4336abe20e34/1456836583287/);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.slide_4{
+  background-color: lightblue;
+  height: 100vh;
+  width: 100vw;
+
+  background-image: url(http://3.bp.blogspot.com/-mLz5tGBHxc8/VJmYqwZwVUI/AAAAAAAAFEc/cyCuyy-gMcQ/s1600/National%2BFilm%2BRegistry%2BPosters.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.slide_5{
+  background-color: maroon;
+  height: 100vh;
+  width: 100vw;
+
+  background-image: url(http://www.filmquadposters.co.uk/posters/star-wars-trilogy-se-mini-triple-poster.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.slide_6{
+  background-color: lightblue;
+  height: 100vh;
+  width: 100vw;
+
+  background-image: url(http://www.dvdactive.com/images/editorial/screenshot/2009/8/wolfman1977a.jpg), url(http://www.dvdactive.com/images/editorial/screenshot/2009/8/wolfman1997a.jpg);
+  background-repeat: no-repeat, no-repeat;
+  background-size: 100vh 50vw, 100vh 50vw;
+  background-position: left,right;
+}
+
+.slide_7{
+  background-color: maroon;
+  height: 100vh;
+  width: 100vw;
+
+}
+
+.slide_8{
+  background-color: lightblue;
+  height: 100vh;
+  width: 100vw;
+
+}
+
+.slide_9{
+  background-color: maroon;
+  height: 100vh;
+  width: 100vw;
+
+}
+
+.slide_10{
+  background-color: lightblue;
+  height: 100vh;
+  width: 100vw;
+
+}
+
+.slide_11{
+  background-color: maroon;
+  height: 100vh;
+  width: 100vw;
+
+}
+
+.slide_12{
+  background-color: lightblue;
   height: 100vh;
   width: 100vw;
 
