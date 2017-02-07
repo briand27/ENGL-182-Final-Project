@@ -8,7 +8,8 @@ $purple:#6E6C9B;
 
 body{
   background:$purple;
-  font-family:Arial,sans-serif;
+  font: white;
+  font-family:Garamond,Arial,sans-serif;
   font-size:2em;
   text-align:left;
   color:$purple;
@@ -24,6 +25,22 @@ p{
 span{
   color:#fff;
   display:block;
+  font-family: franklin-gothic-medium,sans-serif;
+}
+
+header{
+  margin: 0px;
+  padding: 0px;
+}
+
+h1{
+  margin: 0px;
+  padding: 0px;
+}
+
+h3{
+  margin: 0px;
+  padding: 0px;
 }
 
 .slides{
@@ -61,7 +78,7 @@ span{
   height: 100vh;
   width: 100vw;
 
-  color: lightblue;
+  color: green;
 
   /* Not Sure if I like this one */
   background-image: url(https://static1.squarespace.com/static/56272186e4b0a79b5123f467/t/56d58fe086db4336abe20e34/1456836583287/);
@@ -75,7 +92,7 @@ span{
   height: 100vh;
   width: 100vw;
 
-  background-image: url(http://3.bp.blogspot.com/-mLz5tGBHxc8/VJmYqwZwVUI/AAAAAAAAFEc/cyCuyy-gMcQ/s1600/National%2BFilm%2BRegistry%2BPosters.png);
+  /*background-image: url(http://3.bp.blogspot.com/-mLz5tGBHxc8/VJmYqwZwVUI/AAAAAAAAFEc/cyCuyy-gMcQ/s1600/National%2BFilm%2BRegistry%2BPosters.png);*/
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -83,6 +100,7 @@ span{
 
 .slide_5{
   background-color: maroon;
+  color: white;
   height: 100vh;
   width: 100vw;
 
@@ -97,7 +115,7 @@ span{
   height: 100vh;
   width: 100vw;
 
-  background-image: url(http://www.dvdactive.com/images/editorial/screenshot/2009/8/wolfman1977a.jpg), url(http://www.dvdactive.com/images/editorial/screenshot/2009/8/wolfman1997a.jpg);
+  /* background-image: url(http://www.dvdactive.com/images/editorial/screenshot/2009/8/wolfman1977a.jpg), url(http://www.dvdactive.com/images/editorial/screenshot/2009/8/wolfman1997a.jpg);*/
   background-repeat: no-repeat, no-repeat;
   background-size: 100vh 50vw, 100vh 50vw;
   background-position: left,right;
@@ -140,6 +158,13 @@ span{
 
 .slide_12{
   background-color: lightblue;
+  height: 100vh;
+  width: 100vw;
+
+}
+
+.slide_13{
+  background-color: maroon;
   height: 100vh;
   width: 100vw;
 
