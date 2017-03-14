@@ -20,6 +20,6 @@ $(".slides").click(function(event) {
 
   //should not execute for last slide
   $('html,body').animate({
-    scrollTop: $("." + nextSlideName).offset().top},
-    'slow');
+    scrollTop: $(nextSlide).offset().top},
+    900);
   });

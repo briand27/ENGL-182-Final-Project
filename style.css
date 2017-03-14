@@ -1,18 +1,16 @@
-$purple:#6E6C9B;
-
 *{
   padding: 0px;
   margin: 0px;
   background-color: black;
+  text-align: center;
+  font-family: tahoma, sans-serif;
+  /*border: dashed red 1px;*/
+  background-color: inherit;
 }
 
 body{
-  background:$purple;
   font: white;
-  font-family:Garamond,Arial,sans-serif;
-  font-size:2em;
-  text-align:left;
-  color:$purple;
+  text-align: center;
   padding: 0px;
   margin: 0px;
 }
@@ -20,12 +18,27 @@ body{
 p{
   padding: 0px;
   margin: 0px;
+  font-size: 20px;
+}
+
+ul{
+  margin-top: 10px;
+}
+
+li{
+  font-size: 20px;
+  text-align: left;
+  display: inline-block;
+  margin: 5px;
+  padding: 5px;
+  background-color: lightgray;
+  border: 2px solid gray;
 }
 
 span{
-  color:#fff;
-  display:block;
-  font-family: franklin-gothic-medium,sans-serif;
+  color: #22EFF8;
+  display:inline;
+  font-size: 24px;
 }
 
 header{
@@ -34,6 +47,7 @@ header{
 }
 
 h1{
+  font-size: 64px;
   margin: 0px;
   padding: 0px;
 }
@@ -47,11 +61,53 @@ h3{
   background-color: inherit;
 }
 
-.slide_1{
-  background-color: black;
+.slide{
   height: 100vh;
   width: 100vw;
+  position: relative;
+}
 
+.slide img{
+  width: 50vw;
+  margin: 20px;
+  padding: 50px;
+  display: inline;
+  /*border-left: 10px solid gray;
+  /*border-right: 10px solid gray;
+  /*border-radius: 10px;*/
+  background-color: lightgray;
+  vertical-align: middle;
+  border: 2px solid gray;
+  box-shadow: 8px 8px 5px gray;
+}
+
+.slide iframe{
+  height: 540px;
+  width: 960px;
+  margin: 20px;
+  padding: 10px;
+  display: inline;
+  border-left: 20px dashed gray;
+  border-right: 20px dashed gray;
+  border-top: 0px;
+  border-bottom: 0px;
+  /*border-radius: 20px;*/
+  background-color: lightgray;
+  vertical-align: middle;
+}
+
+.content{
+  padding: 20px 0px 20px 0px;
+  background-color: lightgray;
+  border-top: 5px solid gray;
+  color: gray;
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+}
+
+#title{
+  background-color: black;
   color: gold;
 
   background-image: url(http://img.gawkerassets.com/img/18petjfu1p3hsjpg/ku-xlarge.jpg);
@@ -60,147 +116,169 @@ h3{
   background-position: center;
 }
 
-.slide_2{
-  background-color: lightblue;
-  height: 100vh;
-  width: 100vw;
-
-  color: red;
-
-  background-image: url(http://i2.cdn.cnn.com/cnnnext/dam/assets/150428131440-01-star-wars-myth-1977-line---restricted-super-169.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+#title h1{
+  position: absolute;
+  left: 25px;
+  bottom: 25px;
+  background-color: rgba(0, 0, 0, 0);
+  vertical-align: center;
+  text-align: left;
+  float: left;
 }
 
-.slide_3{
-  background-color: maroon;
-  height: 100vh;
-  width: 100vw;
-
-  color: green;
-
-  /* Not Sure if I like this one */
-  background-image: url(https://static1.squarespace.com/static/56272186e4b0a79b5123f467/t/56d58fe086db4336abe20e34/1456836583287/);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+#title p{
+  position: absolute;
+  bottom: 10px;
+  left: 25px;
 }
 
-.slide_4{
-  background-color: lightblue;
-  height: 100vh;
-  width: 100vw;
+/*
+YELLOW PROPERTIES
+*/
 
-  /*background-image: url(http://3.bp.blogspot.com/-mLz5tGBHxc8/VJmYqwZwVUI/AAAAAAAAFEc/cyCuyy-gMcQ/s1600/National%2BFilm%2BRegistry%2BPosters.png);*/
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+#yellow_slide{
+  background-color: #B4B496;
+  border-color: #63634E;
 }
 
-.slide_5{
+#yellow_slide img{
+  background-color: #E0E0C3;
+  border-color: #8E8E72;
+  box-shadow: 8px 8px 5px #63634E;
+}
+
+#yellow_slide iframe{
+  background-color: #E0E0C3;
+  border-color: #8E8E72;
+  box-shadow: 8px 8px 5px #63634E;
+}
+
+#yellow_content{
+  background-color: #343425;
+  border-color: #63634E;
+}
+
+#yellow_content p{
+  color: #B4B496;
+}
+
+#yellow_content li{
+  color: #63634E;
+  background-color: #E0E0C3;
+}
+
+/*
+BLUE PROPERTIES
+*/
+
+#blue_slide{
+  background-color: #676C79;
+  border-color: #363942;
+}
+
+#blue_slide img{
+  background-color: #868A97;
+  border-color: #4F5460;
+  box-shadow: 8px 8px 5px #363942;
+}
+
+#blue_slide iframe{
+  background-color: #868A97;
+  border-color: #4F5460;
+  box-shadow: 8px 8px 5px #363942;
+}
+
+#blue_content{
+  background-color: #1A1C23;
+  border-color: #363942;
+}
+
+#blue_content p{
+  color: #868A97;
+}
+
+#blue_content li{
+  color: #363942;
+  background-color: #868A97;
+}
+
+/*
+RED PROPERTIES
+*/
+
+#red_slide{
+  background-color: #B19394;
+  border-color: #614D4E;
+}
+
+#red_slide img{
+  background-color: #DCC0C1;
+  border-color: #8C7072;
+  box-shadow: 8px 8px 5px #614D4E;
+}
+
+#red_slide iframe{
+  background-color: #DCC0C1;
+  border-color: #8C7072;
+  box-shadow: 8px 8px 5px #614D4E;
+}
+
+#red_content{
+  background-color: #332425;
+  border-color: #614D4E;
+}
+
+#red_content p{
+  color: #B19394;
+}
+
+#red_content li{
+  color: #614D4E;
+  background-color: #DCC0C1;
+}
+
+#slide_5{
   background-color: maroon;
   color: white;
-  height: 100vh;
-  width: 100vw;
-
   background-image: url(http://www.filmquadposters.co.uk/posters/star-wars-trilogy-se-mini-triple-poster.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 
-.slide_6{
+#slide_6{
   background-color: lightblue;
-  height: 100vh;
-  width: 100vw;
-
   /* background-image: url(http://www.dvdactive.com/images/editorial/screenshot/2009/8/wolfman1977a.jpg), url(http://www.dvdactive.com/images/editorial/screenshot/2009/8/wolfman1997a.jpg);*/
   background-repeat: no-repeat, no-repeat;
   background-size: 100vh 50vw, 100vh 50vw;
   background-position: left,right;
 }
 
-.slide_7{
+#slide_7{
   background-color: maroon;
-  height: 100vh;
-  width: 100vw;
-
 }
 
-.slide_8{
+#slide_8{
   background-color: lightblue;
-  height: 100vh;
-  width: 100vw;
-
 }
 
-.slide_9{
+#slide_9{
   background-color: maroon;
-  height: 100vh;
-  width: 100vw;
-
 }
 
-.slide_10{
+#slide_10{
   background-color: lightblue;
-  height: 100vh;
-  width: 100vw;
-
 }
 
-.slide_11{
+#slide_11{
   background-color: maroon;
-  height: 100vh;
-  width: 100vw;
-
 }
 
-.slide_12{
+#slide_12{
   background-color: lightblue;
-  height: 100vh;
-  width: 100vw;
-
 }
 
-.slide_13{
+#works_cited{
   background-color: maroon;
-  height: 100vh;
-  width: 100vw;
-
-}
-
-.bubble{
-  width:280px;
-  font-size:2em;
-  padding:1.5em;
-  letter-spacing:-.0125em;
-  text-transform:uppercase;
-  background:#84B1D5;
-  border-radius:100px;
-  margin:auto;
-  margin-top:50px;
-  position:relative;
-  &:before,
-  &:after{
-    content:' ';
-    display:block;
-    position:absolute;
-    width:100%;
-    height:50px;
-    background:$purple;
-
-  }
-  &:before{
-    top:100%;
-    left:-50%;
-    border-radius:0 100px 0 0;
-    box-shadow:100px 0px 0px 0px #84B1D5;
-  }
-  &:after{
-
-    top:100%;
-    right:-50%;
-    border-radius:100px 0px 0 0;
-  }
+  position: relative;
 }
