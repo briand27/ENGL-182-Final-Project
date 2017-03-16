@@ -21,10 +21,6 @@ p{
   font-size: 20px;
 }
 
-ul{
-  margin-top: 10px;
-}
-
 li{
   font-size: 20px;
   text-align: left;
@@ -39,6 +35,14 @@ span{
   color: #22EFF8;
   display:inline;
   font-size: 24px;
+}
+
+a{
+  color: #22EFF8;
+}
+
+:visited{
+  color: #00CDD6;
 }
 
 header{
@@ -68,15 +72,15 @@ h3{
 }
 
 .slide img{
-  width: 50vw;
+  width: 43%;
   margin: 20px;
   padding: 50px;
-  display: inline;
+  display: inline-block;
   /*border-left: 10px solid gray;
   /*border-right: 10px solid gray;
   /*border-radius: 10px;*/
   background-color: lightgray;
-  vertical-align: middle;
+  /*vertical-align: middle;*/
   border: 2px solid gray;
   box-shadow: 8px 8px 5px gray;
 }
@@ -86,7 +90,7 @@ h3{
   width: 960px;
   margin: 20px;
   padding: 10px;
-  display: inline;
+  display: inline-block;
   border-left: 20px dashed gray;
   border-right: 20px dashed gray;
   border-top: 0px;
@@ -103,7 +107,41 @@ h3{
   color: gray;
   position: absolute;
   bottom: 0px;
-  width: 100%;
+  width: 100vw;
+}
+
+.content p{
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.quote{
+  padding: 20px;
+  margin: 30px;
+  display: inline-block;
+  background-color: lightgray;
+  border: 2px solid gray;
+  color: black;
+  vertical-align: middle;
+  box-shadow: 8px 8px 5px #222222;
+}
+
+.quote p{
+  font-family: garamond,serif;
+}
+
+.quote span{
+  color: black;
+  font-size: 30px;
+  font-family: cursive;
+  display: block;
+}
+
+.quote em{
+  color: black;
+  font-size: 50px;
+  font-family: cursive;
+  display: block;
 }
 
 #title{
@@ -141,6 +179,10 @@ YELLOW PROPERTIES
   border-color: #63634E;
 }
 
+#yellow_slide h1{
+  color: #343425;
+}
+
 #yellow_slide img{
   background-color: #E0E0C3;
   border-color: #8E8E72;
@@ -153,16 +195,31 @@ YELLOW PROPERTIES
   box-shadow: 8px 8px 5px #63634E;
 }
 
-#yellow_content{
+#yellow_slide .quote{
+  background-color: #E0E0C3;
+  color: #343425;
+  border-color: #8E8E72;
+  box-shadow: 8px 8px 5px #63634E;
+}
+
+#yellow_slide .quote em{
+  color: #343425;
+}
+
+#yellow_slide .quote span{
+  color: #343425;
+}
+
+#yellow_slide .content{
   background-color: #343425;
   border-color: #63634E;
 }
 
-#yellow_content p{
+#yellow_slide .content p{
   color: #B4B496;
 }
 
-#yellow_content li{
+#yellow_slide .content li{
   color: #63634E;
   background-color: #E0E0C3;
 }
@@ -188,16 +245,31 @@ BLUE PROPERTIES
   box-shadow: 8px 8px 5px #363942;
 }
 
-#blue_content{
+#blue_slide .quote{
+  background-color: #868A97;
+  color: #1A1C23;
+  border-color: #4F5460;
+  box-shadow: 8px 8px 5px #363942;
+}
+
+#blue_slide .quote em{
+  color: #1A1C23;
+}
+
+#blue_slide .quote span{
+  color: #1A1C23;
+}
+
+#blue_slide .content{
   background-color: #1A1C23;
   border-color: #363942;
 }
 
-#blue_content p{
+#blue_slide .content p{
   color: #868A97;
 }
 
-#blue_content li{
+#blue_slide .content li{
   color: #363942;
   background-color: #868A97;
 }
@@ -223,62 +295,53 @@ RED PROPERTIES
   box-shadow: 8px 8px 5px #614D4E;
 }
 
-#red_content{
+#red_slide .content{
   background-color: #332425;
   border-color: #614D4E;
 }
 
-#red_content p{
+#red_slide .content p{
   color: #B19394;
 }
 
-#red_content li{
+#red_slide .content li{
   color: #614D4E;
   background-color: #DCC0C1;
-}
-
-#slide_5{
-  background-color: maroon;
-  color: white;
-  background-image: url(http://www.filmquadposters.co.uk/posters/star-wars-trilogy-se-mini-triple-poster.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-
-#slide_6{
-  background-color: lightblue;
-  /* background-image: url(http://www.dvdactive.com/images/editorial/screenshot/2009/8/wolfman1977a.jpg), url(http://www.dvdactive.com/images/editorial/screenshot/2009/8/wolfman1997a.jpg);*/
-  background-repeat: no-repeat, no-repeat;
-  background-size: 100vh 50vw, 100vh 50vw;
-  background-position: left,right;
-}
-
-#slide_7{
-  background-color: maroon;
-}
-
-#slide_8{
-  background-color: lightblue;
-}
-
-#slide_9{
-  background-color: maroon;
-}
-
-#slide_10{
-  background-color: lightblue;
-}
-
-#slide_11{
-  background-color: maroon;
-}
-
-#slide_12{
-  background-color: lightblue;
 }
 
 #works_cited{
   background-color: maroon;
   position: relative;
+}
+
+#double{
+  padding: 10px;
+  width: 45%;
+  /*patch job :/ Find out about vertical alignment later*/
+  margin-top: 10%;
+}
+
+#works_cited{
+  text-align: center;
+  background-color: #B4B496;
+  padding: 0px;
+  border: 0px;
+}
+
+#works_cited ul{
+  text-align: left;
+  background-color: #B4B496;
+  padding: 50px;
+  /*position: relative;*/
+  /*width: 70%;*/
+}
+
+#works_cited li{
+  /*position: absolute;
+  left: 50px;*/
+  padding-left: 60px;
+  padding-right: 10px;
+  text-indent: -40px;
+  width: 70%;
+  box-shadow: 8px 8px 5px #343425;
 }

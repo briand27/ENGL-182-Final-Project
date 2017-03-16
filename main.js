@@ -14,9 +14,9 @@ $(".slides").click(function(event) {
 
   console.log(nextSlide);
 
-  var nextSlideName = nextSlide.className;
-
-  console.log(nextSlideName);
+  // var nextSlideName = nextSlide.className;
+  //
+  // console.log(nextSlideName);
 
   //should not execute for last slide
   $('html,body').animate({
